@@ -7,141 +7,65 @@
     box-sizing: border-box;
 }
 
-/*El contenedor del logo y de las lista items con su respectivo borde*/
+/*El contenedor del logo y de las lista items con su color y borde*/
 .padreNavHeader{
     background-color: rgba(94, 9, 173, 0.582);
     border: solid 2px black;
-    display: flex;
-    flex-direction: row;
-    justify-content:space-between;
 }
 
-/*El logo ubicado en la esquina superior izquierda que direcciona al index*/
-.logoPrincipal a img{
-    width: 60px;
-    height: 60px;
-    margin: 10px;
-    border-radius: 50px;
-}
-
-/*El contenedor de los items de la navegacion*/
-.listaNav{
-    display: flex;
-}
-
-/*Los items de la navegacion con su respectivo color, borde, margenes (trate de ubicarlo a la par del logo)*/
+/*El contenedor de los items de la navegacion con su color y borde*/
 .listaNav .box{
     background-color: blueviolet;
     border: solid 1px white;
-    text-align: center;
-    list-style: none;
-    margin: 5px;
-    margin-top: 25px;
-    height: 30px;
-    border-radius: 10px;
 }
 
-/*El texto de los items con su respectivo color y tamaño*/
+/*Los items de la navegacion con su color*/
 .listaNav .box a{
-    font-size: 1.5rem;
-    text-decoration: none;
     color: white;
 }
 
-/*El color,tamaño y tipo de fuente de los titulos principales con sus respectivos margenes*/
+/*El color del hover del contenedor*/
+.box:hover{
+    background-color: white;
+}
+
+/*El color del hover del texto*/
+.box a:hover{
+    color: blueviolet;
+}
+
+/*El color del titulo principal*/
 .tituloPrincipal{
     color:white;
-    font-size: 2rem;
-    font-weight: 400;
-    font-weight: 700;
-    margin: 10px;
-    padding: 10px;
 }
 
-/*Las fotos de la pagina ubicadas en el centro, les asigne el ancho y el alto en cm porque se veian muy grandes y opacaban el texto*/
-.imagenes{
-    width: 20cm;
-    height: 12cm;
-    display: block;
-    margin: auto;
-}
-
-/*Los sub-titulos ubicados en el centro para diferenciarlo mas del titulo principal, con su respectivo color,tamaño y margen*/
+/*El color de los titulos secundarios*/
 .tituloSub{
     color: violet;
-    font-size: 2rem;
-    font-weight: 400;
-    font-weight: 700;
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
 }
 
-/*El video de iframe del main posicionado en el centro*/
-.video{
-    display: block;
-    margin: auto;
-}
-
-/*Los parrafos con su background,color,tamaño y tipo de fuente y borde*/
+/*El color del texto de los parrafos*/
 .tamanioParrafo{
-    background-color: rgba(54, 5, 99, 0.582);
     color: white;
-    font-size: 1rem;
-    font-family: sans-serif;
-    font-weight: 400;
-    letter-spacing: 5px;
-    word-spacing: 3px;
-    line-height: 23px;
-    text-align: center;
-    margin: 10px;
-    border: solid 2px black;
-    
 }
 
-/*La fuente escogida para el formulario de registro con su color,tipo y tamaño de fuente*/
+/*El color del texto del formulario*/
 .fuenteFormulario{
     color: rgb(189, 181, 181);
-    font-size: 1rem;
-    font-family: sans-serif;
-    font-weight: 400;
-}
-
-/*El mapa ubicado en el centro en la seccion contactos*/
-.mapa{
-    display: block;
-    margin: auto;
 }
 
 /*La imagen de fondo de la pagina*/
 body{
-    background-image: url("../assets/img/Fondo_gimnasio.jpg");
+    background-image: url("../assets/img/Fondo_gimnasio_2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow-y: visible;
 }
 
-/*El texto ubicado en el pie de pagina con su color,tipo y tamaño de fuente,margenes*/
+/*El color del texto del pie de pagina*/
 .piePagina{
     color: lightgrey;
-    font-size: 1rem;
-    font-family: sans-serif;
-    font-weight: 400;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    margin-left: 10px;
-}
-
-/*El logo de wsp ubicada en la esquina inferior derecha*/
-.logoWsp{
-    display: block;
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    border-radius: 20px;
 }
 
 /*El tamaño configurado para dispositivos moviles*/
