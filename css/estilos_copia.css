@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+/*Este es el reseteo de los valores*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/*La imagen de fondo de la pagina*/
+body{
+    height: 100%;
+    background-image: url("../assets/img/Fondo_gimnasio_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    overflow-y: visible;
+}
+
+/*El color de la navegacion*/
+.header{
+    background-color: rgba(94, 9, 173, 0.582);
+}
+
+/*El margen que ocupa el main*/
+.main{
+    height: 80%;
+}
+
+/*El margen que ocupa el footer*/
+.footer{
+    height: 5vh;
+}
+
+/*El contenedor de los items de la navegacion con su color y borde*/
+.listaNav .box{
+    background-color: blueviolet;
+}
+
+/*Los items de la navegacion con su color*/
+.listaNav .box a{
+    color: white;
+}
+
+/*El color del hover del contenedor*/
+.box:hover{
+    background-color: white;
+}
+
+/*El color del hover del texto*/
+.box a:hover{
+    color: blueviolet;
+}
+
+/*El color del titulo principal*/
+.tituloPrincipal{
+    color:white;
+}
+
+/*El color de los titulos secundarios*/
+.tituloSub{
+    color: violet;
+}
+
+/*El color del texto de los parrafos*/
+.tamanioParrafo{
+    color: white;
+}
+
+/*El color del texto del formulario*/
+.fuenteFormulario{
+    color: rgb(189, 181, 181);
+}
+
+/*El color del texto del pie de pagina*/
+.piePagina{
+    color: lightgrey;
+}
+
+/*El tamaño configurado para dispositivos moviles*/
+@media screen and (min-width: 0px) and (max-width: 768px) {
+    /*El navegador ubicado en columnas*/
+    .padreNavHeader{
+        flex-direction: column;
+    }
+    
+    /*El logo de la pagina con sus dimensiones*/
+    .logoPrincipal a img{
+        width: 80px;
+        height: 80px;
+        display: block;
+    }
+
+    /*El contenedor de la lista y su tamaño a lo ancho*/
+    .navHeader{
+        width: 100%;
+    }
+
+    /*El contenedor de las li ubicado en columnas*/
+    .listaNav{
+        display: block;
+        flex-direction: column;
+        text-align: center;
+        justify-content: center;
+    }
+
+    /*El tamaño de fuente del texto de los items*/
+    .listaNav .box a{
+        font-size: 1,2rem;
+    }
+
+    /*El tamaño del video del index*/
+    .video{
+        width: 40vh;
+        height: 30vh;
+    }
+
+    /*El tamaño de todas las imagenes*/
+    .imagenes{
+        width: 40vh;
+        height: 30vh;
+    }
+
+    /*El tamaño del mapa en registro*/
+    .mapa{
+        width: 40vh;
+        height: 30vh;
+    }
+
+    /*El tamaño, margen y borde del logo de wsp*/
+    .logoWsp{
+        top: 5px;
+        width: 40px;
+        height: 40px;
+        border-radius: 30px;
+    }
+}

@@ -1,0 +1,20 @@
+.main{
+    height: 80%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+    .main{
+        &{
+            .logoWsp{
+                top: 5px;
+                width: 50px;
+                height: 50px;
+                border-radius: 30px;
+                transition: transform 5s;
+            }
+            .logoWsp:hover{
+                transform: rotate(360deg);
+            }
+        }
+    }    
+}

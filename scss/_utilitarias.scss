@@ -1,0 +1,39 @@
+.tituloPrincipal{
+    color: map-get($colores, titulo-parrafo);
+}
+
+.tituloSub{
+    color: map-get($colores, subtitulos);
+}
+
+.tamanioParrafo{
+    color: map-get($colores, titulo-parrafo);
+}
+
+.fuenteFormulario{
+    color: map-get($colores, fuente-formulario);
+}
+
+.piePagina{
+    color: map-get($colores, pie-de-pagina);
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px){
+
+.video{
+    /*width: $ancho-elementos;
+    height: $alto-elementos;*/
+    @include width-height-video(40vh,30vh);
+}
+
+.imagenes{
+    width: $ancho-elementos;
+    height: $alto-elementos;
+}
+
+.mapa{
+    width: $ancho-elementos;
+    height: $alto-elementos;
+}
+
+}

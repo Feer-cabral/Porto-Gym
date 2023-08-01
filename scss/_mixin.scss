@@ -1,0 +1,5 @@
+@mixin width-height-video($ancho,$alto){
+    display: block;
+    widht: $ancho;
+    height: $alto;
+}

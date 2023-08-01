@@ -1,137 +1,106 @@
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-
-/*Este es el reseteo de los valores*/
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-/*La imagen de fondo de la pagina*/
-body{
-    height: 100%;
-    background-image: url("../assets/img/Fondo_gimnasio_2.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    overflow-y: visible;
+body {
+  height: 100%;
+  background-image: url("../assets/img/Fondo_gimnasio_2.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  overflow-y: visible;
 }
 
-/*El color de la navegacion*/
-.header{
-    background-color: rgba(94, 9, 173, 0.582);
+.tituloPrincipal {
+  color: white;
 }
 
-/*El margen que ocupa el main*/
-.main{
-    height: 80%;
+.tituloSub {
+  color: violet;
 }
 
-/*El margen que ocupa el footer*/
-.footer{
-    height: 5vh;
+.tamanioParrafo {
+  color: white;
 }
 
-/*El contenedor de los items de la navegacion con su color y borde*/
-.listaNav .box{
-    background-color: blueviolet;
+.fuenteFormulario {
+  color: rgb(189, 181, 181);
 }
 
-/*Los items de la navegacion con su color*/
-.listaNav .box a{
-    color: white;
+.piePagina {
+  color: lightgrey;
 }
 
-/*El color del hover del contenedor*/
-.box:hover{
-    background-color: white;
-}
-
-/*El color del hover del texto*/
-.box a:hover{
-    color: blueviolet;
-}
-
-/*El color del titulo principal*/
-.tituloPrincipal{
-    color:white;
-}
-
-/*El color de los titulos secundarios*/
-.tituloSub{
-    color: violet;
-}
-
-/*El color del texto de los parrafos*/
-.tamanioParrafo{
-    color: white;
-}
-
-/*El color del texto del formulario*/
-.fuenteFormulario{
-    color: rgb(189, 181, 181);
-}
-
-/*El color del texto del pie de pagina*/
-.piePagina{
-    color: lightgrey;
-}
-
-/*El tamaño configurado para dispositivos moviles*/
 @media screen and (min-width: 0px) and (max-width: 768px) {
-    /*El navegador ubicado en columnas*/
-    .padreNavHeader{
-        flex-direction: column;
-    }
-    
-    /*El logo de la pagina con sus dimensiones*/
-    .logoPrincipal a img{
-        width: 80px;
-        height: 80px;
-        display: block;
-    }
-
-    /*El contenedor de la lista y su tamaño a lo ancho*/
-    .navHeader{
-        width: 100%;
-    }
-
-    /*El contenedor de las li ubicado en columnas*/
-    .listaNav{
-        display: block;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-    }
-
-    /*El tamaño de fuente del texto de los items*/
-    .listaNav .box a{
-        font-size: 1,2rem;
-    }
-
-    /*El tamaño del video del index*/
-    .video{
-        width: 40vh;
-        height: 30vh;
-    }
-
-    /*El tamaño de todas las imagenes*/
-    .imagenes{
-        width: 40vh;
-        height: 30vh;
-    }
-
-    /*El tamaño del mapa en registro*/
-    .mapa{
-        width: 40vh;
-        height: 30vh;
-    }
-
-    /*El tamaño, margen y borde del logo de wsp*/
-    .logoWsp{
-        top: 5px;
-        width: 40px;
-        height: 40px;
-        border-radius: 30px;
-    }
+  .video {
+    width: 40vh;
+    height: 30vh;
+  }
+  .imagenes {
+    width: 40vh;
+    height: 30vh;
+  }
+  .mapa {
+    width: 40vh;
+    height: 30vh;
+  }
 }
+.header {
+  background-color: rgb(94, 9, 173);
+  background-image: linear-gradient(to right, #383a9e, #463cab, #553eb7, #653fc3, #763fcf, #8444d5, #9249da, #a04ee0, #ac5be2, #b867e5, #c374e7, #cd81ea);
+}
+.header .padreNavHeader .navHeader .listaNav .box {
+  background-color: blueviolet;
+}
+.header .padreNavHeader .navHeader .listaNav .box a {
+  color: white;
+}
+.header .padreNavHeader .navHeader .listaNav .box a:hover {
+  color: blueviolet;
+}
+.header .padreNavHeader .navHeader .listaNav .box:hover {
+  background-color: white;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .padreNavHeader {
+    flex-direction: column;
+  }
+  .padreNavHeader .logoPrincipal a img {
+    width: 80px;
+    height: 80px;
+    display: block;
+  }
+  .padreNavHeader .navHeader {
+    width: 100%;
+  }
+  .padreNavHeader .navHeader .listaNav {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+  }
+  .padreNavHeader .navHeader .listaNav .box {
+    font-size: 1, 2rem;
+  }
+}
+.main {
+  height: 80%;
+}
+
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .main .logoWsp {
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+    transform: rotate(360deg);
+    transition: transform 5s;
+  }
+}
+.footer {
+  height: 5vh;
+}/*# sourceMappingURL=estilos.css.map */
