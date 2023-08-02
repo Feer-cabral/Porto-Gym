@@ -36,16 +36,17 @@ body {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .video {
-    width: 40vh;
-    height: 30vh;
+    width: 80vw;
+    display: block;
+    height: 40vh;
   }
   .imagenes {
-    width: 40vh;
-    height: 30vh;
+    width: 80vw;
+    height: 40vh;
   }
   .mapa {
-    width: 40vh;
-    height: 30vh;
+    width: 80vw;
+    height: 40vh;
   }
 }
 .header {
@@ -90,6 +91,12 @@ body {
 .main {
   height: 80%;
 }
+.main .logoWsp {
+  transition: transform 3s;
+}
+.main .logoWsp:hover {
+  transform: translate(-20px, -20px) rotate(360deg) scale(1.5, 1.5);
+}
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .main .logoWsp {
@@ -97,8 +104,10 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 30px;
+    transition: transform 3s;
+  }
+  .main .logoWsp:hover {
     transform: rotate(360deg);
-    transition: transform 5s;
   }
 }
 .footer {
