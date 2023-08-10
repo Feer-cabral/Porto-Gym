@@ -14,10 +14,6 @@
     color: map-get($colores, fuente-formulario);
 }
 
-.piePagina{
-    color: map-get($colores, pie-de-pagina);
-}
-
 @media screen and (min-width: 0px) and (max-width: 768px){
 
 .video{

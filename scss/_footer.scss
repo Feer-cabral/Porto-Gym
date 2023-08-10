@@ -1,3 +1,6 @@
 .footer{
-    height: 5vh;
+    height: 200px;
+    .piePagina{
+        color: map-get($colores, principal);
+    }
 }
