@@ -7,7 +7,7 @@
 
 body {
   height: 100%;
-  background-image: url("../assets/img/Fondo_gimnasio_2.jpg");
+  background-image: url("../assets/img/Fondo_gimnasio_3.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -26,12 +26,53 @@ body {
   color: white;
 }
 
-.fuenteFormulario {
-  color: rgb(189, 181, 181);
+.formulario {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-image: linear-gradient(to right bottom, #000000, #2d091d, #4f003d, #68006b, #700aa6);
+  border: 1px solid white;
+  border-radius: 5px;
 }
 
-.piePagina {
-  color: lightgrey;
+.formulario label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.formulario input[type=text],
+.formulario input[type=numero],
+.formulario input[type=comment] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid black;
+  border-radius: 3px;
+}
+
+.formulario input[type=submit],
+.formulario input[type=reset] {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario input[type=submit]:hover,
+.formulario input[type=reset]:hover {
+  background-color: blueviolet;
+}
+
+.fuenteFormulario {
+  color: white;
+}
+
+.iconoGrande {
+  font-size: 400px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -67,35 +108,41 @@ body {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  .padreNavHeader {
+  .header {
+    position: initial;
+  }
+  .header .padreNavHeader {
     flex-direction: column;
   }
-  .padreNavHeader .logoPrincipal a img {
+  .header .padreNavHeader .logoPrincipal a img {
     width: 80px;
     height: 80px;
     display: block;
   }
-  .padreNavHeader .navHeader {
+  .header .padreNavHeader .navHeader {
     width: 100%;
   }
-  .padreNavHeader .navHeader .listaNav {
+  .header .padreNavHeader .navHeader .listaNav {
     display: block;
     flex-direction: column;
     text-align: center;
     justify-content: center;
   }
-  .padreNavHeader .navHeader .listaNav .box {
+  .header .padreNavHeader .navHeader .listaNav .box {
     font-size: 1, 2rem;
   }
 }
-.main {
-  height: 80%;
-}
 .main .logoWsp {
-  transition: transform 3s;
+  transition: transform 2s;
 }
 .main .logoWsp:hover {
   transform: translate(-20px, -20px) rotate(360deg) scale(1.5, 1.5);
+}
+.main .imagenes {
+  transition: transform 1s;
+}
+.main .imagenes:hover {
+  transform: scale(1.2);
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -109,7 +156,14 @@ body {
   .main .logoWsp:hover {
     transform: rotate(360deg);
   }
+  .main .icono {
+    font-size: 200px;
+  }
 }
 .footer {
-  height: 5vh;
+  height: 90px;
+  background-image: linear-gradient(to bottom, #ffffff, #eae4f8, #d9c8ee, #ccabe2, #c38dd2);
+}
+.footer .piePagina {
+  color: blueviolet;
 }/*# sourceMappingURL=estilos.css.map */

@@ -1,9 +1,14 @@
 .main{
-    /*height: 80%;*/
     .logoWsp{
-        transition: transform 3s;
+        transition: transform 2s;
         &:hover{
             transform: translate(-20px,-20px) rotate(360deg) scale(1.5,1.5);
+        }
+    }
+    .imagenes{
+        transition: transform 1s;
+        &:hover{
+            transform: scale(1.2);
         }
     }
 }
@@ -19,6 +24,9 @@
                 &:hover{
                     transform: rotate(360deg);
             }
+        }
+        .icono{
+            font-size: 200px;
         }
     }
 }

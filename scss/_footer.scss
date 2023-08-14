@@ -1,5 +1,6 @@
 .footer{
-    height: 200px;
+    height: 90px;
+    background-image: linear-gradient(to bottom, #ffffff, #eae4f8, #d9c8ee, #ccabe2, #c38dd2);
     .piePagina{
         color: map-get($colores, principal);
     }
