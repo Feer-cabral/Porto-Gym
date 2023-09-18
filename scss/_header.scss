@@ -1,50 +1,68 @@
-.header{
-    background-color: map-get($colores, navegador);
-    background-image: linear-gradient(to right, #383a9e, #463cab, #553eb7, #653fc3, #763fcf, #8444d5, #9249da, #a04ee0, #ac5be2, #b867e5, #c374e7, #cd81ea);
-    .padreNavHeader{
-        .navHeader{
-            .listaNav{
-                .box{
-                    background-color: map-get($colores, principal);
-                    a{
-                        color: map-get($colores, titulo-parrafo);
-                        &:hover{
-                            color: map-get($colores, principal);
-                        }
-                    }                  
-                }
-                .box:hover{
-                    background-color: map-get($colores, titulo-parrafo);
-                }
-            }
-        }
+.header {
+  background-color: map-get($colores, navegador);
+  background-image: linear-gradient(
+    to right,
+    #383a9e,
+    #463cab,
+    #553eb7,
+    #653fc3,
+    #763fcf,
+    #8444d5,
+    #9249da,
+    #a04ee0,
+    #ac5be2,
+    #b867e5,
+    #c374e7,
+    #cd81ea
+  );
+  .padreNavHeader {
+    .logo {
+      width: "70px";
+      height: "70px";
     }
+    .navHeader {
+      .listaNav {
+        .box {
+          background-color: map-get($colores, principal);
+          a {
+            color: map-get($colores, titulo-parrafo);
+            &:hover {
+              color: map-get($colores, principal);
+            }
+          }
+        }
+        .box:hover {
+          background-color: map-get($colores, titulo-parrafo);
+        }
+      }
+    }
+  }
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px){
-   .header{
-        position: initial;
-        .padreNavHeader{
-            flex-direction: $contenedor-flexible-columnas;
-            .logoPrincipal a img{
-                width: 80px;
-                height: 80px;
-                display: $contenedor-block;
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .header {
+    position: initial;
+    .padreNavHeader {
+      flex-direction: $contenedor-flexible-columnas;
+      .logoPrincipal a img {
+        width: 80px;
+        height: 80px;
+        display: $contenedor-block;
+      }
+      .navHeader {
+        width: 100%;
+        .listaNav {
+          display: $contenedor-block;
+          flex-direction: $contenedor-flexible-columnas;
+          text-align: center;
+          justify-content: center;
+          .box {
+            & {
+              font-size: 1, 2rem;
             }
-            .navHeader{
-                width: 100%;
-                .listaNav{
-                    display: $contenedor-block;
-                    flex-direction: $contenedor-flexible-columnas;
-                    text-align: center;
-                    justify-content: center;
-                    .box{
-                        &{
-                            font-size: 1,2rem;
-                        }
-                    }
-                }
-            }
+          }
         }
+      }
     }
-}   
+  }
+}
