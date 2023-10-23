@@ -1,0 +1,51 @@
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .header {
+    position: initial;
+    .padreNavHeader {
+      justify-content: center;
+      .logoPrincipal a img {
+        width: 80px;
+        height: 80px;
+        display: block;
+      }
+      .menu {
+        display: flex;
+      }
+    }
+    .listaNav {
+      display: none;
+      flex-direction: column;
+      text-align: center;
+      justify-content: center;
+      .box {
+        font-size: 1, 2rem;
+      }
+    }
+  }
+
+  .logoWsp {
+    display: none;
+    top: 5px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+  }
+
+  .video {
+    display: block;
+    width: 80vw;
+    height: 40vh;
+  }
+  .imagenes {
+    width: 80vw;
+    height: 40vh;
+  }
+  .mapa {
+    width: 80vw;
+    height: 40vh;
+  }
+
+  .iconoGrande {
+    font-size: 200px;
+  }
+}
